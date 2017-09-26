@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9wZ-Zg-W10">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ydv-Xq-PZA">
+            <objects>
+                <navigationController id="9wZ-Zg-W10" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="00t-Te-f62">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="F6v-O4-c4Z" kind="relationship" relationship="rootViewController" id="z1L-DQ-IGx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOa-zG-Su4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="96"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fce-eC-7C0">
+            <objects>
+                <viewController id="F6v-O4-c4Z" customClass="ViewController" customModule="EmoticonTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ifl-sX-bgW"/>
+                        <viewControllerLayoutGuide type="bottom" id="HTq-05-MnR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="enG-FQ-gZP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" text="aldfkjladjsfal;sdjfalskdjfal;skdjflasdjkfl;asdjkflasjkdflasjdfl;ajksdfl;ajks" translatesAutoresizingMaskIntoConstraints="NO" id="EUX-F7-169">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="F6v-O4-c4Z" id="ha4-x3-lIj"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EUX-F7-169" firstAttribute="top" secondItem="enG-FQ-gZP" secondAttribute="top" id="KdT-9c-vcT"/>
+                            <constraint firstAttribute="trailing" secondItem="EUX-F7-169" secondAttribute="trailing" id="nGI-EO-WBN"/>
+                            <constraint firstItem="HTq-05-MnR" firstAttribute="top" secondItem="EUX-F7-169" secondAttribute="bottom" id="wpe-2v-JIP"/>
+                            <constraint firstItem="EUX-F7-169" firstAttribute="leading" secondItem="enG-FQ-gZP" secondAttribute="leading" id="zXf-FX-JJ1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TQL-Oh-Lb6"/>
+                    <connections>
+                        <outlet property="textView" destination="EUX-F7-169" id="FaY-ar-0Zp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="njS-nq-tkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527" y="95"/>
+        </scene>
+    </scenes>
+</document>
